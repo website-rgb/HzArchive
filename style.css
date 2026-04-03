@@ -1,0 +1,129 @@
+:root {
+  --bg-color: rgb(49, 49, 49);
+  --header-color: white;
+  --txt-color: white;
+  --trenn-color: white;
+  --button-colors: black;
+  --button-colors-2: white;
+}
+
+.light {
+  --bg-color: rgb(221, 221, 221);
+  --header-color: rgb(255, 255, 255);
+  --txt-color: rgb(0, 0, 0);
+  --trenn-color: rgb(0, 0, 0);
+  --button-colors: black;
+  --button-colors-2: black;
+}
+
+html {
+  background-color: var(--bg-color);
+  font-family: Inter, sans-serif;
+  color: var(--txt-color);
+}
+
+body {
+  margin: 0;
+}
+
+div.header {
+  top: 0;
+  width: 100%;
+  border: none;
+  background-color: var(--header-color);
+  padding: 0.1875rem;
+  align-items: center;
+  display: flex;
+}
+
+img.logo {
+  width: auto;
+  height: 7vh;
+  margin-left: 0.625rem;
+}
+
+h1.txt1 {
+  margin-left: 0.625rem;
+  font-size: 4vh;
+}
+
+p.txt2 {
+  margin-left: 0.625rem;
+  font-weight: lighter;
+  font-size: 2.3vh;
+}
+
+hr.trenn {
+  margin-left: 0.625rem;
+  background-color: var(--trenn-color);
+}
+
+p.txt3 {
+  margin-left: 0.625rem;
+  font-size: 1.7vh;
+  font-weight: 200;
+}
+
+button.btn1 {
+  border: 0.0625rem var(--button-colors) solid;
+  border-radius: 100px;
+  background: none;
+  color: var(--button-colors);
+  padding: 0.3125rem;
+  cursor: pointer;
+  height: fit-content;
+}
+
+button.btn2 {
+  border: 0.0625rem var(--button-colors-2) solid;
+  background: none;
+  border-radius: 100px;
+  margin-left: 0.625rem;
+  color: var(--button-colors-2);
+  font-size: 2.1vh;
+  padding: 0.1875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  cursor: pointer;
+}
+
+div.buttons-header {
+  margin-left: auto;
+  margin-right: 0.625rem;
+}
+
+hr.trenn2 {
+  margin-left: 0.625rem;
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--trenn-color) 0,
+    var(--trenn-color) 8px,
+    transparent 8px,
+    transparent 12px
+  );
+}
+
+table {
+  margin-left: 0.625rem;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 3vh; border-collapse: collapse;
+}
+
+td,
+th {
+  border: 0.0625rem var(--txt-color) solid;
+  padding: 0.1875rem;
+}
+
+mark.m1 {
+  background-color: rgb(255, 255, 131);
+}
+
+audio.aud1 {
+  margin-left: 0.625rem;
+  border-radius: 100px;
+  box-shadow: 0 0 16px white;
+}
