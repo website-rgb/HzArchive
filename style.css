@@ -34,6 +34,8 @@ div.header {
   padding: 0.1875rem;
   align-items: center;
   display: flex;
+  animation-name: OU;
+  animation-duration: 1s;
 }
 
 img.logo {
@@ -45,23 +47,31 @@ img.logo {
 h1.txt1 {
   margin-left: 0.625rem;
   font-size: 4vh;
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 p.txt2 {
   margin-left: 0.625rem;
   font-weight: lighter;
   font-size: 2.3vh;
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 hr.trenn {
   margin-left: 0.625rem;
   background-color: var(--trenn-color);
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 p.txt3 {
   margin-left: 0.625rem;
   font-size: 1.7vh;
   font-weight: 200;
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 button.btn1 {
@@ -85,6 +95,8 @@ button.btn2 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   cursor: pointer;
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 div.buttons-header {
@@ -103,13 +115,18 @@ hr.trenn2 {
     transparent 8px,
     transparent 12px
   );
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 table {
   margin-left: 0.625rem;
   text-align: center;
   border-collapse: collapse;
-  font-size: 3vh; border-collapse: collapse;
+  font-size: 3vh;
+  border-collapse: collapse;
+  animation-name: LR;
+  animation-duration: 1s;
 }
 
 td,
@@ -126,4 +143,26 @@ audio.aud1 {
   margin-left: 0.625rem;
   border-radius: 100px;
   box-shadow: 0 0 16px white;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+@keyframes LR {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes OU {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
